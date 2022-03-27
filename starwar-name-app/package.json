@@ -1,0 +1,18 @@
+{
+    "name": "starwar-name-app",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "docker-build": "docker build -t so2liu/starwars-node -f ci/dockerfile . && docker push so2liu/starwars-node",
+        "docker-run": "docker run --rm -p 3000:3000 so2liu/starwars-node"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+        "express": "^4.17.3",
+        "unique-names-generator": "^4.7.1"
+    }
+}
